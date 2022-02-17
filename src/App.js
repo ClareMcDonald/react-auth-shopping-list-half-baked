@@ -39,6 +39,11 @@ export default function App() {
       <div className='App'>
         <header>
           {/* if there's a user, render a logout button here */}
+          {user &&
+            <>
+              <button onClick={handleLogout}>Logout</button>
+            </>
+          }
         </header>
         <main>
           <Switch>
