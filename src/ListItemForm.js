@@ -15,7 +15,7 @@ export default function ListItemForm({ fetchItems }) {
     await createListItem(newItem);
 
     // refetch the items using the handler function passed down as a prop
-    await fetchItems;
+    await fetchItems();
 
     // clear the name and quantity in state to refresh the form
     setName('');
